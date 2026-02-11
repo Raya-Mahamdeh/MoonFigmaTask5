@@ -7,6 +7,8 @@
 .header {
   display: flex;
   gap: 232.5px;
+  padding: 21.84px 0;
+  margin: 0 165px;
 }
 
 .menu ul {
@@ -19,4 +21,21 @@
   display: flex;
   gap: 24px;
   list-style-type: none;
+}
+.collection-section {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 40px 0;
+  margin: 0 165px;
+}
+.collection {
+  width: calc((100% - 90px) / 4);
+}
+.collection img {
+  margin-bottom: 23px;
+}
+img {
+  width: 100%;
 }
