@@ -15,7 +15,17 @@ a {
   font-family: "Inter", sans-serif;
   color: var(--primaryColor);
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "EB Garamond", serif;
+}
+.body {
+  font-family: var(--primaryFont), sans-serif;
+}
 .header {
   /* gap: 232.5px;*/
   padding: 21.84px 0;
@@ -85,7 +95,63 @@ a {
   margin-bottom: 23px;
   width: 100%;
 }
+/*---------------------------- best seller ------------------------------*/
 
+.best-seller {
+  text-align: center;
+  padding: 80px 0;
+}
+.best-seller .row {
+  gap: 30px;
+}
+.best-seller .item {
+  text-align: left;
+  width: calc((100% - 90px) / 4);
+}
+.best-seller .item-img img {
+  width: 100%;
+}
+.best-seller .item-content {
+  margin-top: 24px;
+}
+.best-seller h2 {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 48px;
+}
+.best-seller h3 {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: var(--primaryFont), sans-serif;
+  margin-bottom: 12px;
+}
+.best-seller span {
+  font-size: 14px;
+  font-weight: 500;
+}
+.best-seller .description {
+  color: #807f86;
+  font-size: 14px;
+  font-weight: 400;
+  width: 80%;
+  line-height: 22px;
+  margin-top: 24px;
+}
+.best-seller .add-to-cart {
+  padding: 15px 81px;
+  background-color: #fff;
+  border: 1px solid #000;
+  letter-spacing: 3px;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: var(--primaryFont), sans-serif;
+  margin-top: 38px;
+  width: 100%;
+}
 @media screen and (min-width: 0) and (max-width: 700px) {
   .header .row {
     flex-wrap: nowrap;
@@ -112,11 +178,19 @@ a {
     gap: 30px;
   }
   .collection {
-    width: calc((100% - 100px));
+    width: 100%;
   }
   .collection h2 {
     font-size: 14px;
   }
+  /*--------best seller-----*/
+  .best-seller .item {
+    width: 100%;
+  }
+  .best-seller .add-to-cart{
+    padding: 15px 40px;
+  }
+  
 }
 @media screen and (min-width: 701px) and (max-width: 968px) {
   .header .row {
@@ -125,12 +199,17 @@ a {
   .container {
     width: calc(100% - 10%);
   }
-  
+
   .collection {
     width: calc((100% - 30px) / 2);
     text-align: center;
     margin-bottom: 20px;
   }
+  /*--------best seller-----*/
+  .best-seller .item {
+    width: calc((100% - 30px) / 2);
+  }
+  
 }
 @media screen and (min-width: 969px) and (max-width: 1300px) {
   .header .row {
@@ -145,6 +224,13 @@ a {
     text-align: center;
     margin-bottom: 20px;
   }
+  /*--------best seller-----*/
+  .best-seller .item {
+    width: calc((100% - 60px) / 3);
+  }
+   .best-seller .add-to-cart{
+    padding: 15px 10px;
+  }
 }
 @media screen and (min-width: 1301px) and (max-width: 1872px) {
   .header .row {
@@ -156,4 +242,12 @@ a {
     text-align: center;
     margin-bottom: 20px;
   }
+    /*--------best seller-----*/
+  .best-seller .item {
+    width: calc((100% - 90px) / 4);
+  }
+   .best-seller .add-to-cart{
+    padding: 15px 10px;
+  }
+  
 }
