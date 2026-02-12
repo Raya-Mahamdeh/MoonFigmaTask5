@@ -125,49 +125,34 @@ a {
   .container {
     width: calc(100% - 10%);
   }
-  .menu {
-    display: none;
-  }
-  .header-icons {
-    display: none;
-  }
-  .menu-logo {
-    display: flex;
-    width: 30px;
-    height: 30px;
-  }
-  .cart-logo {
-    display: flex;
-  }
+  
   .collection {
     width: calc((100% - 30px) / 2);
     text-align: center;
     margin-bottom: 20px;
   }
 }
-@media screen and (min-width: 700px) and (max-width: 968px) {
+@media screen and (min-width: 968px) and (max-width: 1300px) {
   .header .row {
     flex-wrap: nowrap;
   }
   .container {
     width: calc(100% - 10%);
   }
-  .menu {
-    display: none;
-  }
-  .header-icons {
-    display: none;
-  }
-  .menu-logo {
-    display: flex;
-    width: 30px;
-    height: 30px;
-  }
-  .cart-logo {
-    display: flex;
-  }
+
   .collection {
     width: calc((100% - 60px) / 3);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1301px) and (max-width: 1872px) {
+  .header .row {
+    flex-wrap: nowrap;
+  }
+
+  .collection {
+    width: calc((100% - 90px) / 4);
     text-align: center;
     margin-bottom: 20px;
   }
