@@ -118,7 +118,7 @@ a {
     font-size: 14px;
   }
 }
-@media screen and (min-width: 700px) and (max-width: 968px) {
+@media screen and (min-width: 701px) and (max-width: 968px) {
   .header .row {
     flex-wrap: nowrap;
   }
@@ -132,7 +132,7 @@ a {
     margin-bottom: 20px;
   }
 }
-@media screen and (min-width: 968px) and (max-width: 1300px) {
+@media screen and (min-width: 969px) and (max-width: 1300px) {
   .header .row {
     flex-wrap: nowrap;
   }
